@@ -21,18 +21,18 @@ function updarteProfileInfo(profileData) {
 }
 
 function updarteSoftSkills(profileData) {
-    const softSkills = document.getElementById('profile.skills.softSkills')
+    const softSkills = document.getElementById('profile.skills.hardSkills')
     softSkills.innerHTML = profileData.skills.softSkills.map(skill => `<li><i class="fa-brands fa-jedi-order"></i>${skill}</li>`).join('')
 }
 
-function updarteHardSkills(profileData) {
+function updateHardSkills(profileData) {
     const hardSkills = document.getElementById('profile.skills.hardSkills')
-    hardSkills.innerHTML = profileData.skills.softSkills.map(skill => `<li><img src="${skill.logo}" alt="${skill.name}" tittle="${skill.name}"></li>`).join('')
+    hardSkills.innerHTML = profileData.skills.hardSkills.map(skill => `<li><img src="${skill.logo}" alt="${skill.name}" tittle="${skill.name}"></li>`).join('')
 }
 
 (async () => {
   const profileData = await fetchProfileData();
   updarteProfileInfo(profileData);
   updarteSoftSkills(profileData);
-  updarteHardSkills(profileData);
+  updateHardSkills(profileData);
 })();

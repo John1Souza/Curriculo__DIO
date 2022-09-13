@@ -52,18 +52,24 @@
 }
 
 .acordeon .content.open{  
-    display: inline-block;
+    display: flex;
     height: auto;
     opacity: 1;
 }
 
-.acordeon #conteudo__skills ul{  
+.acordeon #conteudo__skills{  
     list-style: none; 
     display: flex;
     flex-direction: column;
-    padding: 1rem; 
+}
+.acordeon #conteudo__skills .soft__Skills{  
+    flex-direction: column;
 }
 
+.acordeon .ferramentas ul{
+    display: flex;
+    flex-direction: column;
+}
 
 .acordeon .content.open ul{  
     list-style: none; 
@@ -101,9 +107,18 @@
     cursor: pointer;
 }
 
+
+.ferramentas img{
+    max-width: 50px;
+}
+
 @media only screen and (min-width: 768px){
     .acordeon #conteudo__skills{
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+    .ferramentas{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
