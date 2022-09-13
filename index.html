@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- NORMALIZE CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./assets/css/acordeon.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/b57770f8d0.js" crossorigin="anonymous"></script>
+
+
+    <title>Portifolio | Johnatas Pereira de Souza</title>
+  </head>
+  <body>
+    <div class="main">
+
+        <header class="header">
+            <img class="photo" src="./assets/image/WhatsApp Image 2022-09-11 at 10.54.07 (1) (1).jpeg" alt="perfil.jpg" >
+    
+            <h1 class="tittle">Ola,<br> eu sou o Johnatas P Souza</h1>
+    
+    
+            <div class="information">
+                <p><i class="fa-solid fa-chalkboard-user"></i>Junior Developer</p>
+                <p><i class="fa-solid fa-location-dot"></i>Brasília - DF</p>
+                <p><i class="fa-brands fa-whatsapp"></i>(61) 9 9357-0978</p>
+                <p><i class="fa-solid fa-square-envelope"></i>johnatas2014@hotmail.com</p>
+            </div>
+    
+        </header>        
+        
+        <section id="section__language" class="acordeon">
+            <button id="button_language" class="trigger">Idiomas<i id="drop__down" class="fa-solid fa-caret-down"></i></button>
+            
+            <div  id="conteudo__language" class="content">
+                <ul>
+                    <li><i class="fa-solid fa-check"></i>Português</li>
+                    <li><i class="fa-solid fa-check"></i>Inglês</li>
+                    <li><i class="fa-solid fa-check"></i>Espanhol</li>
+                </ul>
+            </div>
+        </section>
+        <section id="section__portifolio" class="acordeon">
+            <button id="button_portifolio" class="trigger">Portifolio<i id="drop__down" class="fa-solid fa-caret-down"></i></button>
+            
+            <div  id="conteudo__portifolio" class="content">
+                <ul>
+                    
+                    <li><p>PokeDéx desenvolvida com HTML 5, CSS e Java Script, utilizando a API pokedex</p><i class="fa-brands fa-github"></i><a href="https://john1souza.github.io/PokeDex01/" target="_blank">https://john1souza.github.io/PokeDex01/</a></li>
+                    <li><p>Jogo da memória desenvolvido com HTML5, CSS e Java Script</p><i class="fa-brands fa-github"></i><a href="https://john1souza.github.io/memory-game/" target="_blank">https://john1souza.github.io/memory-game/</a></li>
+                    <li><p>Web site desenvolvido com HTML5 e CSS</p><i class="fa-brands fa-github"></i><a href="https://john1souza.github.io/html-css-website-v1/" target="_blank">https://john1souza.github.io/html-css-website-v1/</a></li>
+                    <li><p>Formulário desenvolvido com HTML5 e CSS e Java Script</p><i class="fa-brands fa-github"></i><a href="https://john1souza.github.io/Super-Formul-rio/" target="_blank">https://john1souza.github.io/Super-Formul-rio/</a></li>
+                    <li><p>Veja mais no meu repositório do GitHub</p><i class="fa-brands fa-github"></i><a href="https://github.com/John1Souza" target="_blank">https://github.com/John1Souza</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="section__skills" class="acordeon">
+            <button id="button_skills" class="trigger">Skills<i id="drop__down" class="fa-solid fa-caret-down"></i></button>
+            
+            <div  id="conteudo__skills" class="content">
+                
+                <ul class="ferramentas">
+                        <h2>Ferramentas</h2>
+                        <li><i class="fa-brands fa-html5"></i>HTML5</li>
+                        <li><i class="fa-brands fa-css3-alt"></i>CSS3</li>
+                        <li><i class="fa-brands fa-square-js"></i>JavaScript</li>
+                        <li><i class="fa-brands fa-react"></i>React</li>
+                        <li><i class="fa-brands fa-python"></i>Python</li>
+                    </ul>
+
+                    <ul>
+                        <h2>Pessoal</h2>
+                        <li>
+                            <i class="fa-brands fa-jedi-order"></i>Fácil adaptação</li>
+                        <li>
+                            <i class="fa-brands fa-jedi-order"></i>Proativo
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-jedi-order"></i>Resolução de problemas
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-jedi-order"></i>Dinâmico
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-jedi-order"></i>Flexível
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-jedi-order"></i>Comunicativo
+                        </li>
+                    </ul>
+                
+            </div>
+        </section>
+
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

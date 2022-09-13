@@ -1,0 +1,109 @@
+.acordeon {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 0;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    transition: .3s;
+}
+
+
+
+.acordeon.open,
+.acordeon:hover{
+    background-color: #55569e;
+    border-color: #55569e;
+
+}
+
+.acordeon .trigger {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: 700;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+}
+
+.acordeon .trigger:hover {
+    cursor: pointer;
+}
+
+
+.acordeon.open #drop__down{
+    transform: rotate(180deg);
+}
+
+
+
+
+
+.acordeon .content {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity .25s ease;
+    
+}
+
+.acordeon .content.open{  
+    display: inline-block;
+    height: auto;
+    opacity: 1;
+}
+
+.acordeon #conteudo__skills ul{  
+    list-style: none; 
+    display: flex;
+    flex-direction: column;
+    padding: 1rem; 
+}
+
+
+.acordeon .content.open ul{  
+    list-style: none; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem; 
+}
+.acordeon .content.open i{
+    padding-right: 5px;
+}
+
+
+.acordeon #conteudo__portifolio ul{  
+    list-style: none; 
+    display: flex;
+    flex-direction: column;
+    padding: 1rem; 
+}
+
+.acordeon #conteudo__portifolio li{  
+    margin: .5rem;
+    padding: 1rem;
+    border: 1px solid #fff;
+    border-radius: 15px;
+}
+
+.acordeon #conteudo__portifolio i{  
+    padding-right: 5px;
+}
+
+.acordeon #conteudo__portifolio a{  
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px){
+    .acordeon #conteudo__skills{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

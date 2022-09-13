@@ -1,0 +1,54 @@
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.header .photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.header .tittle {
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    font-size: 1.5rem;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.information p {
+    margin: 0.5rem;
+    font-size: 1.05rem;
+}
+
+.information i {
+    padding-right: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+    .header{
+        display: grid;
+        grid-template-areas: 
+            "photo tittle"
+            "photo information";
+        
+    }
+    .header .photo {
+        grid-area: photo;
+        margin: 0 auto;
+    }
+    .header .tittle {
+        grid-area: tittle;
+        text-align: start;
+        max-width: 350px;
+    }
+}
