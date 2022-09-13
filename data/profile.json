@@ -1,0 +1,50 @@
+{
+  "name": "Johnatas P Souza",
+  "photo": "./assets/image/WhatsApp Image 2022-09-11 at 10.54.07 (1) (1).jpeg",
+  "location": "Brasília - DF",
+  "phone": "(61) 9 9357-0978",
+  "email": "johnatas2014@hotmail.com",
+  "skills": {
+    "hardSkills": [      
+      {
+        "name": "React",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/react.png"
+      }
+      
+    ],
+    "softSkills": [
+      "Fácil adaptação",
+      "Proativo",
+      "Resolução de problemas",
+      "Dinâmico",
+      "Comunicativo"
+    ]
+  },
+  "languages": [
+    "Português BR",
+    "Inglês (intermediário)",
+    "Espanhol (básico)"
+  ],
+  "portfolio": [
+    {
+      "name": "Jogo da memória desenvolvido com HTML5, CSS e Java Script",
+      "url": "https://john1souza.github.io/memory-game/",
+      "github": true
+    },
+    {
+      "name": "PokeDéx desenvolvida com HTML 5, CSS e Java Script, utilizando a API pokedex",
+      "url": "https://john1souza.github.io/PokeDex01/",
+      "github": true
+    },
+    {
+      "name": "Web site desenvolvido com HTML5 e CSS",
+      "url": "https://john1souza.github.io/html-css-website-v1/",
+      "github": true
+    }
+  ],
+  "professionalExperience": [
+    {
+      "description": "Em busca da primeira oportunida de no mercado."
+    }
+  ]
+}
