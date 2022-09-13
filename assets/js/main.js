@@ -1,21 +1,26 @@
-const buttonSkill = document.getElementById('button_skills');
-const buttonLang = document.getElementById('button_language');
-const buttonPort = document.getElementById('button_portifolio');
+function updarteProfileInfo(profileData) {
+    document.getElementById("profile.photo");
 
+    
+    
 
-buttonSkill.addEventListener('click', ()=>{
-    document.getElementById('section__skills').classList.toggle('open');
-    document.getElementById('conteudo__skills').classList.toggle('open')    
-})
+    const name = document.getElementById('profile.name')
+    name.innerText = profileData.name
 
-buttonLang.addEventListener('click', ()=>{
-    document.getElementById('section__language').classList.toggle('open');
-    document.getElementById('conteudo__language').classList.toggle('open')  
-})
+    const job = document.getElementById('profile.job')
+    job.innerText = profileData.job
 
-buttonPort.addEventListener('click', ()=>{
-    document.getElementById('section__portifolio').classList.toggle('open');
-    document.getElementById('conteudo__portifolio').classList.toggle('open')  
-})
+    const location = document.getElementById('profile.location')
+    location.innerText = profileData.location
 
+    const phone = document.getElementById('profile.phone')
+    phone.innerText = profileData.phone
 
+    const email = document.getElementById('profile.email')
+    email.innerText = profileData.email
+}
+
+(async () => {
+  const profileData = await fetchProfileData();
+  updarteProfileInfo(profileData);
+})();

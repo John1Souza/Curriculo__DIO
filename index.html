@@ -28,45 +28,19 @@
     <div class="main">
 
         <header class="header">
-            <img class="photo" src="./assets/image/WhatsApp Image 2022-09-11 at 10.54.07 (1) (1).jpeg" alt="perfil.jpg" >
+            <img class="photo" src="./assets/image/WhatsApp Image 2022-09-11 at 10.54.07 (1) (1).jpeg" id="profile.name" alt="perfil.jpg" >
     
-            <h1 class="tittle">Ola,<br> eu sou o Johnatas P Souza</h1>
+            <h1 class="tittle" id="profile.name">Ola,<br> eu sou o Johnatas P Souza</h1>
     
     
             <div class="information">
-                <p><i class="fa-solid fa-chalkboard-user"></i>Junior Developer</p>
-                <p><i class="fa-solid fa-location-dot"></i>Brasília - DF</p>
-                <p><i class="fa-brands fa-whatsapp"></i>(61) 9 9357-0978</p>
-                <p><i class="fa-solid fa-square-envelope"></i>johnatas2014@hotmail.com</p>
+                <p class="job" ><i class="fa-solid fa-chalkboard-user"></i><span id="profile.job">Junior Developer</span></p>
+                <p class="location" ><i class="fa-solid fa-location-dot"></i><span id="profile.location">Brasília - DF</span></p>
+                <p class="phone" ><i class="fa-brands fa-whatsapp"></i><span id="profile.phone">(61) 9 9357-0978</span></p>
+                <p class="email" ><i class="fa-solid fa-square-envelope"></i><span id="profile.email">johnatas2014@hotmail.com</span></p>
             </div>
     
-        </header>        
-        
-        <section id="section__language" class="acordeon">
-            <button id="button_language" class="trigger">Idiomas<i id="drop__down" class="fa-solid fa-caret-down"></i></button>
-            
-            <div  id="conteudo__language" class="content">
-                <ul>
-                    <li><i class="fa-solid fa-check"></i>Português</li>
-                    <li><i class="fa-solid fa-check"></i>Inglês</li>
-                    <li><i class="fa-solid fa-check"></i>Espanhol</li>
-                </ul>
-            </div>
-        </section>
-        <section id="section__portifolio" class="acordeon">
-            <button id="button_portifolio" class="trigger">Portifolio<i id="drop__down" class="fa-solid fa-caret-down"></i></button>
-            
-            <div  id="conteudo__portifolio" class="content">
-                <ul>
-                    
-                    <li><p>PokeDéx desenvolvida com HTML 5, CSS e Java Script, utilizando a API pokedex</p><i class="fa-brands fa-github"></i><a href="https://john1souza.github.io/PokeDex01/" target="_blank">https://john1souza.github.io/PokeDex01/</a></li>
-                    <li><p>Jogo da memória desenvolvido com HTML5, CSS e Java Script</p><i class="fa-brands fa-github"></i><a href="https://john1souza.github.io/memory-game/" target="_blank">https://john1souza.github.io/memory-game/</a></li>
-                    <li><p>Web site desenvolvido com HTML5 e CSS</p><i class="fa-brands fa-github"></i><a href="https://john1souza.github.io/html-css-website-v1/" target="_blank">https://john1souza.github.io/html-css-website-v1/</a></li>
-                    <li><p>Formulário desenvolvido com HTML5 e CSS e Java Script</p><i class="fa-brands fa-github"></i><a href="https://john1souza.github.io/Super-Formul-rio/" target="_blank">https://john1souza.github.io/Super-Formul-rio/</a></li>
-                    <li><p>Veja mais no meu repositório do GitHub</p><i class="fa-brands fa-github"></i><a href="https://github.com/John1Souza" target="_blank">https://github.com/John1Souza</a></li>
-                </ul>
-            </div>
-        </section>
+        </header> 
 
         <section id="section__skills" class="acordeon">
             <button id="button_skills" class="trigger">Skills<i id="drop__down" class="fa-solid fa-caret-down"></i></button>
@@ -104,10 +78,40 @@
                     </ul>
                 
             </div>
+        </section>     
+        
+        <section id="section__language" class="acordeon">
+            <button id="button_language" class="trigger">Idiomas<i id="drop__down" class="fa-solid fa-caret-down"></i></button>
+            
+            <div  id="conteudo__language" class="content">
+                <ul>
+                    <li><i class="fa-solid fa-check"></i>Português</li>
+                    <li><i class="fa-solid fa-check"></i>Inglês</li>
+                    <li><i class="fa-solid fa-check"></i>Espanhol</li>
+                </ul>
+            </div>
         </section>
+        <section id="section__portifolio" class="acordeon">
+            <button id="button_portifolio" class="trigger">Portifolio<i id="drop__down" class="fa-solid fa-caret-down"></i></button>
+            
+            <div  id="conteudo__portifolio" class="content">
+                <ul>
+                    
+                    <li><p>PokeDéx desenvolvida com HTML 5, CSS e Java Script, utilizando a API pokedex</p><i class="fa-brands fa-github"></i><a href="https://john1souza.github.io/PokeDex01/" target="_blank">https://john1souza.github.io/PokeDex01/</a></li>
+                    <li><p>Jogo da memória desenvolvido com HTML5, CSS e Java Script</p><i class="fa-brands fa-github"></i><a href="https://john1souza.github.io/memory-game/" target="_blank">https://john1souza.github.io/memory-game/</a></li>
+                    <li><p>Web site desenvolvido com HTML5 e CSS</p><i class="fa-brands fa-github"></i><a href="https://john1souza.github.io/html-css-website-v1/" target="_blank">https://john1souza.github.io/html-css-website-v1/</a></li>
+                    <li><p>Formulário desenvolvido com HTML5 e CSS e Java Script</p><i class="fa-brands fa-github"></i><a href="https://john1souza.github.io/Super-Formul-rio/" target="_blank">https://john1souza.github.io/Super-Formul-rio/</a></li>
+                    <li><p>Veja mais no meu repositório do GitHub</p><i class="fa-brands fa-github"></i><a href="https://github.com/John1Souza" target="_blank">https://github.com/John1Souza</a></li>
+                </ul>
+            </div>
+        </section>
+        
+
 
     </div>
 
+    <script src="./assets/js/main_1.js"></script>
+    <script src="./assets/js/api.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
