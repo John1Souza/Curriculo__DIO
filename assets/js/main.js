@@ -25,13 +25,14 @@ function updarteSoftSkills(profileData) {
     softSkills.innerHTML = profileData.skills.softSkills.map(skill => `<li><i class="fa-brands fa-jedi-order"></i>${skill}</li>`).join('')
 }
 
-function updarteSoftSkills(profileData) {
-    const softSkills = document.getElementById('profile.skills.softSkills')
-    softSkills.innerHTML = profileData.skills.softSkills.map(skill => `<li><i class="fa-brands fa-jedi-order"></i>${skill}</li>`).join('')
+function updarteHardSkills(profileData) {
+    const hardSkills = document.getElementById('profile.skills.hardSkills')
+    hardSkills.innerHTML = profileData.skills.softSkills.map(skill => `<li><img src="${skill.logo}" alt="${skill.name}" tittle="${skill.name}"></li>`).join('')
 }
 
 (async () => {
   const profileData = await fetchProfileData();
   updarteProfileInfo(profileData);
   updarteSoftSkills(profileData);
+  updarteHardSkills(profileData);
 })();
