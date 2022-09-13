@@ -20,7 +20,18 @@ function updarteProfileInfo(profileData) {
     email.innerText = profileData.email
 }
 
+function updarteSoftSkills(profileData) {
+    const softSkills = document.getElementById('profile.skills.softSkills')
+    softSkills.innerHTML = profileData.skills.softSkills.map(skill => `<li><i class="fa-brands fa-jedi-order"></i>${skill}</li>`).join('')
+}
+
+function updarteSoftSkills(profileData) {
+    const softSkills = document.getElementById('profile.skills.softSkills')
+    softSkills.innerHTML = profileData.skills.softSkills.map(skill => `<li><i class="fa-brands fa-jedi-order"></i>${skill}</li>`).join('')
+}
+
 (async () => {
   const profileData = await fetchProfileData();
   updarteProfileInfo(profileData);
+  updarteSoftSkills(profileData);
 })();
