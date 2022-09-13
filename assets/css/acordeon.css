@@ -39,15 +39,15 @@
     transform: rotate(180deg);
 }
 
-
-
-
-
 .acordeon .content {
     overflow: hidden;
     height: 0;
     opacity: 0;
-    transition: opacity .25s ease;
+    transition: opacity .25s ease;    
+}
+
+.acordeon .content #conteudo__language i{
+    padding-right: 5px;
     
 }
 
@@ -55,6 +55,7 @@
     display: flex;
     height: auto;
     opacity: 1;
+    padding: 15px;
 }
 
 .acordeon #conteudo__skills{  
@@ -75,24 +76,28 @@
     list-style: none; 
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 1rem; 
+    justify-content: space-around; 
 }
 .acordeon .content.open i{
     padding-right: 5px;
 }
-
+#conteudo__language li{
+    padding: 1rem;
+}
 
 .acordeon #conteudo__portifolio ul{  
     list-style: none; 
     display: flex;
     flex-direction: column;
-    padding: 1rem; 
+    margin: 0 auto;
+    padding: .5rem;    
+    text-align: justify;
 }
 
-.acordeon #conteudo__portifolio li{  
-    margin: .5rem;
-    padding: 1rem;
+.acordeon #conteudo__portifolio li{ 
+    width: 280px; 
+    margin: 0 auto;
+    padding: .5rem;
     border: 1px solid #fff;
     border-radius: 15px;
 }
@@ -101,10 +106,19 @@
     padding-right: 5px;
 }
 
+.acordeon #conteudo__portifolio p{  
+    font-size: .825rem;
+    margin: .5rem;
+}
+
 .acordeon #conteudo__portifolio a{  
+    width: 280px; 
     text-decoration: none;
     color: #fff;
-    cursor: pointer;
+    cursor: point;
+    text-align: justify;
+    font-size: .750rem;
+    margin: .5rem;
 }
 
 
@@ -120,5 +134,15 @@
     .ferramentas{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .acordeon #conteudo__portifolio li{ 
+        width: 100%;
+        max-width: 1040px;
+        margin: 0.5rem;
+        padding: 1rem;
+        border: 1px solid #fff;
+        border-radius: 15px;
+        font-size: 1rem;
     }
 }
